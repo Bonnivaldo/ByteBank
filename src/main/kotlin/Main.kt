@@ -1,16 +1,26 @@
-fun main(args: Array<String>) {
+fun main() {
     println("Bem vindo ao ByteBank")
 
-    var titular : String = "Cleidson Bononi"
-    val numeroConta : Int = 1000
-    var saldo : Double = 0.0
-    saldo = 100 + 2.0
-    saldo += 198
+    val contaAlex = Conta("Alex", 1000)
+    contaAlex.mostraDadosConta()
+
+    val contaFran = Conta("Fran" , 1001)
+    contaFran.mostraDadosConta()
+
+    contaFran.deposita(300.0)
+    contaAlex.deposita(100.0)
+
+    contaFran.deposita(200.0)
+
+    contaFran.saque(300.0)
+
+    contaFran.trasfere(50.0, contaAlex)
+    //teste
+    println(contaAlex.saldo)
 
 
-
-    println("Titular $titular")
-    println("Numero de Conta $numeroConta")
-    println ("Saldo da Conta $saldo")
 
 }
+
+
+
