@@ -1,18 +1,21 @@
 fun testaComportamentoConta() {
-    val contaAlex = Conta("Alex", 1000)
+
+    val contaAlex = ContaCorrente("Alex", 1000)
     contaAlex.mostraDadosConta()
 
-    val contaFran = Conta("Fran", 1001)
+    val contaFran = ContaPoupança("Fran", 1001)
     contaFran.mostraDadosConta()
+
+    val contaDouglas = ContaSalario("Fran", 1002)
+    contaDouglas.mostraDadosConta()
 
     contaFran.deposita(300.0)
     contaAlex.deposita(100.0)
+    contaDouglas.deposita(100.0)
 
-    contaFran.deposita(200.0)
+    contaDouglas.saque(300.0)
 
-    contaFran.saque(300.0)
-
-    contaFran.trasfere(50.0, contaAlex)
+    contaDouglas.trasfere(50.0, contaAlex)
     //teste
-    println(contaAlex.saldo)
+
 }
