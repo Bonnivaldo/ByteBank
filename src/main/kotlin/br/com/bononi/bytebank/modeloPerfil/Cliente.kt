@@ -20,6 +20,8 @@ class Cliente(
         }
     }
 
-
+    override fun toString(): String {
+        return nome
+    }
 
 }
