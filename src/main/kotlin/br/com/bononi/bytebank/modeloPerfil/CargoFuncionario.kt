@@ -4,7 +4,7 @@ abstract class CargoFuncionario(
     val nome: String,
     val sobrenome: String,
     val cpf: String,
-    val salario: Double,
+    val salario: Double
 ) {
 
     abstract val bonificacao: Double

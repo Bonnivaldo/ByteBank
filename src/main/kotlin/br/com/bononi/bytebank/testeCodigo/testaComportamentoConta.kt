@@ -16,7 +16,8 @@ fun testaComportamentoConta() {
     MostraDados(contaAlex)
 
     val contaFran = ContaCorrente(fran, 1001)
-    MostraDados (contaFran)
+
+
 
     val contaDouglas = ContaSalario(douglas, 1002)
     MostraDados (contaDouglas)

@@ -27,4 +27,16 @@ fun testaFuncionarios() {
         plr = 200.0
     )
 
+    val salarios: DoubleArray = doubleArrayOf(alex.salario, fran.salario, gui.salario)
+    var maiorSalario = Double.MIN_VALUE
+
+    salarios.forEach{ salario ->
+        if (salario > maiorSalario){
+            maiorSalario = salario
+        }
+    }
+
+    println("O Maior Salario é $maiorSalario")
+
 }
+

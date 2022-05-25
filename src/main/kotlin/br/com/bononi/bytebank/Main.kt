@@ -1,8 +1,7 @@
-import br.com.bononi.bytebank.modeloPerfil.Endereco
-import kotlin.reflect.jvm.internal.impl.storage.LockBasedStorageManager.ExceptionHandlingStrategy
+import br.com.bononi.bytebank.brinks.*
 
 fun main() {
-
-        testaComportamentoConta()
+    testaListaLivros()
 }
+
 
